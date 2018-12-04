@@ -1,0 +1,89 @@
+[[Base64]]
+uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+
+[[Combinatorics]]
+deps = ["LinearAlgebra", "Polynomials", "Test"]
+git-tree-sha1 = "50b3ae4d643dc27eaff69fb6be06ee094d5500c9"
+uuid = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+version = "0.7.0"
+
+[[DiffRules]]
+deps = ["Random", "Test"]
+git-tree-sha1 = "c49ec69428ffea0c1d1bbdc63d1a70f5df5860ad"
+uuid = "b552c78f-8df3-52c6-915a-8e097449b14b"
+version = "0.0.7"
+
+[[Distributed]]
+deps = ["LinearAlgebra", "Random", "Serialization", "Sockets"]
+uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+
+[[InteractiveUtils]]
+deps = ["Markdown"]
+uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+
+[[Libdl]]
+uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[[LinearAlgebra]]
+deps = ["Libdl"]
+uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[[Logging]]
+uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
+
+[[Markdown]]
+deps = ["Base64"]
+uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[[Polynomials]]
+deps = ["LinearAlgebra", "SparseArrays", "Test"]
+git-tree-sha1 = "1a1eae52956658a6acae6fa1b6d6c3d488192895"
+uuid = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+version = "0.5.1"
+
+[[REPL]]
+deps = ["InteractiveUtils", "Markdown", "Sockets"]
+uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+
+[[Random]]
+deps = ["Serialization"]
+uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[ReplMaker]]
+deps = ["REPL", "Test", "Unicode"]
+git-tree-sha1 = "e40e05e0dc94e12717fbc368a4977039ff472c83"
+uuid = "b873ce64-0db9-51f5-a568-4457d8e49576"
+version = "0.2.2"
+
+[[Rewrite]]
+deps = ["Combinatorics", "DiffRules", "SpecialSets"]
+git-tree-sha1 = "bc8a5c4acade2c3ff08ab449f2c01daa95a3756c"
+repo-rev = "master"
+repo-url = "https://github.com/HarrisonGrodin/Rewrite.jl.git"
+uuid = "329df15e-4b1e-11e8-0b4f-55ede0b53481"
+version = "0.1.0"
+
+[[Serialization]]
+uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+
+[[Sockets]]
+uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
+
+[[SparseArrays]]
+deps = ["LinearAlgebra", "Random"]
+uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[[SpecialSets]]
+deps = ["Combinatorics"]
+git-tree-sha1 = "71a10914b75f5d6c18c55958e88df349fad6d28a"
+repo-rev = "master"
+repo-url = "https://github.com/HarrisonGrodin/SpecialSets.jl.git"
+uuid = "c6b63f46-9023-11e8-3b28-1f7d8c94880d"
+version = "0.1.0"
+
+[[Test]]
+deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
+uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[Unicode]]
+uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
