@@ -23,7 +23,7 @@ if isdefined(Base, :active_repl)
      end
  end
 
-export normalize
+export normalize, Rewrite
 
 end
 # Source Code:1 ends here

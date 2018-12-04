@@ -15,7 +15,7 @@ and wraps it with ~@term~ and ~normalize~, ie.
 
 
 
-* Source Code
+** Source Code
 #+BEGIN_SRC julia :comments link :tangle src/RewriteRepl.jl 
 module RewriteRepl
 
@@ -41,14 +41,14 @@ if isdefined(Base, :active_repl)
      end
  end
 
-export normalize
+export normalize, Rewrite
 
 end
 #+END_SRC
 
 
-* Tests
-#+BEGIN_SRC julia :comments link :tangle test/runtests.jl 
+** Tests
+#+BEGIN_SRC julia :comments link :tangle test/runtests.jl
 using Test
 Base.include(@__MODULE__, joinpath(Sys.BINDIR, "..", "share", "julia", "test", "testhelpers", "FakePTYs.jl"))
 import .FakePTYs: open_fake_pty
@@ -146,5 +146,6 @@ out3p = run_repl_test(test_script3p);
     @test out2[end-7] == out2p[end-7]
     println("Testing REPL...")  # FIXME: avoids CI timeout
     @test out3[end-7] == out3p[end-7]
-end 
+end
 #+END_SRC
+
