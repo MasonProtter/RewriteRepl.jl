@@ -1,7 +1,8 @@
 # [[file:~/Documents/Julia/RewriteRepl/README.org::*Source%20Code][Source Code:1]]
 module RewriteRepl
 
-using ReplMaker, Rewrite
+using Reexport, ReplMaker
+@reexport using Rewrite
 
 Rewrite.normalize(t::Term, tup::Tuple) = normalize(t, tup...)
 
