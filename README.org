@@ -9,11 +9,15 @@ and wraps it with ~@term~ and ~normalize~, ie.
 
 
 #+BEGIN_SRC julia
- julia> using RewriteRepl
+julia> using RewriteRepl
 
- @term> sin(θ)/cos(θ) 
+julia> @syms θ
+
+@term> sin(θ)/cos(θ) 
 #+END_SRC
+
 is equivalent to
+
 #+BEGIN_SRC julia
  julia> normalize(@term sin(θ)/cos(θ))
 #+END_SRC
