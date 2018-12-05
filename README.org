@@ -11,7 +11,7 @@ and wraps it with ~@term~ and ~normalize~, ie.
 #+BEGIN_SRC julia
  @term> sin(θ)/cos(θ) 
 #+END_SRC
-
+is equivalent to
 #+BEGIN_SRC julia
  julia> normalize(@term sin(θ)/cos(θ))
 #+END_SRC
