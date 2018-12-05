@@ -1,4 +1,5 @@
 * RewriteRepl
+[[https://travis-ci.com/MasonProtter/RewriteRepl.jl.svg?branch=master]]
 This package provides a repl mode for the Julia term rewriting system
 [[https://github.com/HarrisonGrodin/Rewrite.jl][Rewrite.jl]]. This repl mode can be accessed by pressing the ~=~ key at
 an empty ~julia>~ prompt. Currently, this REPL mode simply takes code
