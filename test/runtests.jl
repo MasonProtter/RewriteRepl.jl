@@ -42,20 +42,20 @@ end
 
 
 test_script1 = """
- using Rewrite
+ using RewriteRepl
 
  =
  1 + 1
  """*CTRL_C
 
 test_script1p = """
- using Rewrite
+ using RewriteRepl
 
  normalize(@term 1 + 1)
  """*CTRL_C
 
 test_script2 = """
- using Rewrite
+ using RewriteRepl
 
  =
  1 + 1
@@ -65,7 +65,7 @@ out1 = run_repl_test(test_script1);
 out1p = run_repl_test(test_script1p);
 
 test_script2p = """
- using Rewrite
+ using RewriteRepl
 
  normalize(@term 1 + 1)
  """*CTRL_C
@@ -75,14 +75,14 @@ out2p = run_repl_test(test_script2p);
 
 
 test_script3 = """
- using Rewrite
+ using RewriteRepl
 
  =
  cos(x)^2 + sin(x)^2
  """*CTRL_C
 
 test_script3p = """
- using Rewrite
+ using RewriteRepl
 
  normalize(@term cos(x)^2 + sin(x)^2)
  """*CTRL_C
