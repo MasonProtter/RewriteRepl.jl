@@ -25,6 +25,9 @@ is equivalent to
 
 
 ** Source Code
+This readme is a literal document containing all of the source and
+test code for the package.
+
 #+BEGIN_SRC julia :comments link :tangle src/RewriteRepl.jl 
 module RewriteRepl
 
